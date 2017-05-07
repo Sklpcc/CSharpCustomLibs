@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("Persistence")]
+[assembly: AssemblyTitle("Sklpcc.Persistence")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Persistence")]
+[assembly: AssemblyProduct("Sklpcc.Persistence")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("b512e1d4-9e94-4968-af4b-ad416ae63fe6")]
+[assembly: Guid("509a315d-1735-41d5-acbe-7d474f486823")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //
