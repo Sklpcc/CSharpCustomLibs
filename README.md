@@ -1,7 +1,10 @@
 # CSharpCustomLibs
 
-I know there are more effective methods.
-But I did it just for fun.
+I'll upload code snippets that I want to reuse in other college projects/assignments.
+
+## Disclaimer
+I know there are more effective methods.  
+But I did it just for fun.  
 
 **NOT recommended for use in production environments. (Not even development).**
 
