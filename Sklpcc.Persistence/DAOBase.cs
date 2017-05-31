@@ -2,7 +2,7 @@
 
 // Creado por: Christian
 // Fecha: 07/05/2017 00:54
-// Actualizado por ultima vez: 07/05/2017 01:04
+// Actualizado por ultima vez: 31/05/2017 11:17
 
 #endregion
 
@@ -85,8 +85,8 @@ namespace Sklpcc.Persistence
 
 			selectString = string.Join(",", columns.Select(c => c.Name));
 			fullSelectString = string.Join(",", columns.Select(c => $"{tableName}.{c.Name}"));
-			updateString = "set " + string.Join(",", columns.Select(c => c.Name + " = @p_" + c.Name));
-			parameters = string.Join(",", columns.Select(c => "@p_" + c.Name));
+			parameters = string.Join(",", columns.Where(c => !c.IsReadOnly).Select(c => "@p_" + c.Name));
+			updateString = "set " + parameters;
 		}
 
 		public DAOBase(ADbContext dbContext)

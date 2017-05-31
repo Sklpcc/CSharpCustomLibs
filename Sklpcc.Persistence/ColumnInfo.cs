@@ -2,7 +2,7 @@
 
 // Creado por: Christian
 // Fecha: 07/05/2017 00:54
-// Actualizado por ultima vez: 07/05/2017 01:04
+// Actualizado por ultima vez: 31/05/2017 11:15
 
 #endregion
 
@@ -22,6 +22,7 @@ namespace Sklpcc.Persistence
 		public bool CanBeNull {get; set;}
 		public bool IsPK {get; set;}
 		public bool IsPKForced {get; set;}
+		public bool IsReadOnly {get; set;}
 		public int? MaxLength {get; set;}
 		public int? MinLength {get; set;}
 		public string Name {get; set;}
@@ -80,6 +81,8 @@ namespace Sklpcc.Persistence
 			{
 				this.Name = prop.Name;
 			}
+
+			this.IsReadOnly = prop.GetCustomAttribute(typeof(ReadOnly), true) != null;
 		}
 
 		#endregion

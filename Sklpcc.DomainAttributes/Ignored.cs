@@ -13,6 +13,7 @@ namespace Sklpcc.DomainAttributes
 	/// <summary>
 	///     Usado para indicar que la propiedad debe ser ignorada por la clase DAOBase
 	/// </summary>
+	[AttributeUsage(AttributeTargets.Property)]
 	public class Ignored : Attribute
 	{
 	}
